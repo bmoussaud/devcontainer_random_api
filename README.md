@@ -2,6 +2,19 @@
 
 A simple FastAPI application that generates random integers.
 
+[![Open in Dev Containers](https://img.shields.io/static/v1?label=Dev%20Containers&message=Open&color=blue)](https://vscode.dev/redirect?url=vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https://github.com/bmoussaud/devcontainer_random_api)
+
+## Development with DevContainer
+
+This project includes a devcontainer configuration for Visual Studio Code. To use it:
+
+1. Install the "Remote - Containers" extension in VS Code
+2. Open the project in VS Code
+3. Click the green button in the bottom-left corner or press `F1` and select "Remote-Containers: Reopen in Container"
+4. VS Code will build and start the development container
+
+The devcontainer comes with all necessary dependencies pre-installed.
+
 ## Running the application
 
 ```bash
