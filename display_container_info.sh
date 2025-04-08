@@ -6,5 +6,8 @@ nbproc=$(cat /proc/cpuinfo | grep processor | wc -l)
 echo "Number of processors: $nbproc"
 echo "* Display information about the memory:"
 cat /proc/meminfo | grep MemTotal
-cat /proc/meminfo | grep MemFree
-cat /proc/meminfo | grep MemAvailable
+memtotal=$(cat /proc/meminfo | grep MemTotal | awk '{print $2}')
+memtotal=$((memtotal/1024/1024))
+echo "Total memory: $memtotal GB"
+
+
